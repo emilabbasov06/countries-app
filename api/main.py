@@ -1,10 +1,6 @@
-from fastapi import FastAPI, Depends, HTTPException, status, APIRouter
-from sqlalchemy.orm import Session
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from .routers import country
-
-from .models import CountryModel
-from .database import get_db
 
 app = FastAPI()
 
